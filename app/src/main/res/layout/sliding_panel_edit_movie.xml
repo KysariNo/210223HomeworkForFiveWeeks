@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".tabs.SlidingPanelEditMovie"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:padding="10dp">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/headerEditMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="60dp"
+            android:textColor="@color/black"
+            android:text="@string/editMovie"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sectionEditNameMovieList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/headerEditMovie"
+            android:layout_margin="10dp"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/teal_700"
+            app:startIconTint="@color/teal_700"
+            app:endIconTint="@android:color/holo_red_light"
+            android:hint="@string/MovieName"
+            app:hintTextColor="@color/ping"
+            app:startIconDrawable="@drawable/add_movie"
+            app:endIconMode="clear_text"
+            app:boxStrokeWidthFocused="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editMovieName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/green"
+                android:textCursorDrawable="@drawable/cursor"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sectionEditMovieGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/sectionEditNameMovieList"
+            android:layout_margin="10dp"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/teal_700"
+            app:startIconTint="@color/teal_700"
+            app:endIconTint="@android:color/holo_red_light"
+            android:hint="@string/MovieGenre"
+            app:hintTextColor="@color/ping"
+            app:startIconDrawable="@drawable/movie_genres"
+            app:endIconMode="clear_text"
+            app:boxStrokeWidthFocused="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editMovieGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/green"
+                android:textCursorDrawable="@drawable/cursor"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sectionEditMovieTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/sectionEditMovieGenre"
+            android:layout_margin="10dp"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/teal_700"
+            app:startIconTint="@color/teal_700"
+            app:endIconTint="@android:color/holo_red_light"
+            android:hint="@string/MovieTime"
+            app:hintTextColor="@color/ping"
+            app:startIconDrawable="@drawable/movie_time"
+            app:endIconMode="clear_text"
+            app:boxStrokeWidthFocused="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editMovieTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/green"
+                android:textCursorDrawable="@drawable/cursor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sectionEditMovieRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/sectionEditMovieTime"
+            android:layout_margin="10dp"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@color/teal_700"
+            app:startIconTint="@color/teal_700"
+            app:endIconTint="@android:color/holo_red_light"
+            android:hint="@string/MovieRating"
+            app:hintTextColor="@color/ping"
+            app:startIconDrawable="@drawable/movie_genres"
+            app:endIconMode="clear_text"
+            app:boxStrokeWidthFocused="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editMovieRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textColor="@color/green"
+                android:textCursorDrawable="@drawable/cursor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/sectionResEditMovieList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/sectionEditMovieRating"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/resEditNameMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/green"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/resEditMovieGenre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/green"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/resEditMovieTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/green"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/resEditMovieRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/green"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonEditMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
+            android:background="@color/black"
+            android:text="@string/editMovie"
+            android:textColor="@color/green"
+            app:layout_constraintTop_toBottomOf="@id/sectionResEditMovieList"
+            tools:layout_editor_absoluteX="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
+
+

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">210223HomeworkForFiveWeeks</string>
+
+
+    <string name="addMovie">ДОБАВИТЬ ФИЛЬМ</string>
+    <string name="MovieGenres">ЖАНРЫ ФИЛЬМОВ</string>
+    <string name="Movie">ФИЛЬМЫ</string>
+    <string name="MovieFilter">ФИЛЬТР ФИЛЬМОВ</string>
+
+
+    <string name="Historical">ИСТОРИЧЕСКИЙ</string>
+    <string name="Fantasy">ФЭНТЕЗИ</string>
+    <string name="Adventures">ПРИКЛЮЧЕНИЯ</string>
+
+
+
+
+
+    <string name="NewMovieGenre">ДОБАВИТЬ ЖАНР ФИЛЬМА</string>
+
+
+
+    <string name="MovieName">НАПИШИТЕ НАЗВАНИЕ ФИЛЬМА</string>
+    <string name="MovieGenre">ВЫБЕРИТЕ ЖАНР ФИЛЬМА</string>
+    <string name="MovieTime">НАПИШИТЕ ДЛИТЕЛЬНОСТЬ ФИЛЬМА </string>
+    <string name="MovieRating">НАПИШИТЕ РЕЙТИНГ ФИЛЬМА</string>
+
+
+    <string name="deleteAllMovieGenres">УДАЛИТЬ ВСЕ ЖАНРЫ ФИЛЬМОВ</string>
+    <string name="deleteAllMovie">УДАЛИТЬ ВСЕ ФИЛЬМЫ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">СКОРО СДЕЛАЕМ</string>
+
+    <string name="editGenre">РЕДАКТИРОВАНЬЕ ЖАНРОВ</string>
+    <string name="labelEnterGenre">НАПИШИТЕ НАЗВАНИЕ ЖАНРА</string>
+    <string name="editMovie">РЕДАКТИРОВАНЬЕ ФИЛЬМОВ</string>
+
+
+    labelEnter
+
+</resources>

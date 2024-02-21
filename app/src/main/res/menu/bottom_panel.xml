@@ -1,0 +1,31 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/addMovieItemBottomNav"
+        android:icon="@drawable/add_movie"
+        android:title="@string/addMovie"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/MovieGenresItemBottomNav"
+        android:icon="@drawable/movie_genres"
+        android:title="@string/MovieGenres"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/MovieItemBottomNav"
+        android:icon="@drawable/movie"
+        android:title="@string/Movie"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/MovieFilterItemBottomNav"
+        android:icon="@drawable/movie_filter"
+        android:title="@string/MovieFilter"
+        app:showAsAction="ifRoom"/>
+
+</menu>

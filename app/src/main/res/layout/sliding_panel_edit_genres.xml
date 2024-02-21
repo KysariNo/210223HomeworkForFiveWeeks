@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tabs.SlidingPanelEditGenres">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:paddingBottom="70dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/headerEditMovieGenres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:text="@string/editGenre"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/sectionEditMovieGenres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/headerEditMovieGenres"
+            android:layout_margin="10dp"
+            app:boxBackgroundColor="@android:color/transparent"
+            app:boxStrokeColor="@android:color/white"
+            app:startIconTint="@android:color/white"
+            app:endIconTint="@android:color/holo_red_light"
+            android:hint="@string/labelEnterGenre"
+            app:hintTextColor="@color/purple_700"
+            app:startIconDrawable="@drawable/new_genre"
+            app:endIconMode="clear_text"
+            app:boxStrokeWidthFocused="4dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditMovieGenres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/green"
+                android:textCursorDrawable="@drawable/cursor"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
